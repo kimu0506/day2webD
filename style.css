@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-bg {
+  background-image: url("background3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+header ul {
+  float: right;
+  padding-top: 0px 50px;
+}
+
+header li {
+  padding: 30px 20px 0px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+header li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  /*    */
+  font-family: Futura;
+}
+
+header li a:hover {
+  color: #3f5dda;
+}
+
+.main-copy {
+  clear: left;
+  text-align: center;
+  padding-top: 250px;
+}
+
+.sub-copy {
+  color: #fff;
+  font-size: 42px;
+  font-family: futura;
+  text-align: center;
+  padding: 30px;
+}
+
+.Intoroduction {
+  text-align: center;
+}
+
+.title-2 {
+  color: #3f5dda;
+  font-size: 50px;
+  font-family: futura;
+  padding: 50px;
+  text-align: center;
+}
+
+.info-box1 {
+  width: 65%;
+  margin: 0 auto;
+  /*  background: red;*/
+  overflow: hidden;
+  /*  display: inline-block;*/
+
+  /**/
+}
+
+.info-box1 img {
+  float: left;
+  padding: 10px 30px 30px 50px;
+}
+
+
+.info-1 {
+  width: 400px;
+  float: left;
+  padding: 0px 20px 30px 30px;
+  font-family: futura;
+  text-align: center;
+}
+
+.info-1 p {
+  text-align: left;
+  line-height: 2;
+
+}
+
+
+.info-box2 {
+  width: 60%;
+  margin: 0 auto;
+  clear: both;
+  padding: 10px 30px 30px 30px;
+}
+
+.info-2 {
+  width: 400px;
+  float: left;
+  padding: 10px 30px 40px 30px;
+  font-family: futura;
+  text-align: center;
+
+}
+
+.info-2 p {
+  text-align: left;
+  line-height: 2;
+
+}
+
+.Intoroduction-botan-1 {
+  color: #fff;
+  text-decoration: none;
+  clear: both;
+  margin: 0 auto;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 21px;
+  background-color: #3f5dda;
+  text-align: center;
+}
+
+.Intoroduction-botan {
+  color: #fff;
+  text-decoration: none;
+  clear: both;
+  margin: 0 auto;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 21px;
+  background-color: #fec000;
+  text-align: center;
+
+}
+
+.Intoroduction-botan-1 :hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Intoroduction-botan :hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*coursesda*/
+
+.choice-Course {
+  background-color: #E0FFFF;
+
+}
+
+.title-3 {
+  color: #3f5dda;
+  font-size: 50px;
+  font-family: futura;
+  padding: 50px;
+  text-align: center;
+}
+
+
+.course-box {
+  background-color: #fff;
+  height: 310px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px 10px;
+  flex-direction: column;
+  font-family: futura;
+}
+
+.card-a img {
+  height: 120px;
+}
+
+.card-b img {
+  height: 100px;
+}
+
+.coursebox-all {
+  margin: 0 75px 50px 75px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  left: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.img-box {
+  padding-top: 30px;
+  margin: 0 auto;
+
+  width: 100px;
+  height: 100px;
+}
+
+.course p {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.course-bo {
+  margin-top: 16px;
+  color: #fff;
+  text-decoration: none;
+  clear: both;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  background-color: #fec000;
+  text-align: center;
+
+}
+
+/*1*/
+.html .course-bo {
+  background-color: #f16529;
+}
+
+/*2*/
+.css .course-bo {
+  background-color: #29a9df;
+}
+
+/*3*/
+.unity .course-bo {
+  background-color: #333333;
+}
+
+/*4*/
+.ruby .course-bo {
+  background-color: #ff5252;
+}
+
+/*5*/
+.js .course-bo {
+  background-color: #fed700;
+}
+
+/*6*/
+.swift .course-bo {
+  background-color: #f16629;
+}
+
+/*7*/
+.go .course-bo {
+  background-color: #73cedd;
+}
+
+.course-bo:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*imagedayo*/
+
+.title-4 {
+  color: #3f5dda;
+  font-size: 50px;
+  font-family: futura;
+  padding: 50px;
+  text-align: center;
+}
+
+.slider  {
+  width: 60%;
+  height: 100px;
+  display: flex;
+	flex-direction: row;
+}
+
+.slider img{
+  width: 100%;
+}
+
+/*Access*/
+.title-5 {
+  color: #3f5dda;
+  font-size: 50px;
+  font-family: futura;
+  padding: 50px;
+  text-align: center;
+}
+iframe {
+    width: 600px;
+    height: 400px;
+    margin: 0px auto;
+    display: block;
+}
+
+
+/*footerdayo*/
+footer{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-family: futura;
+    color: #3e5ddb;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
