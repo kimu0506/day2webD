@@ -8,40 +8,64 @@
   <link rel="stylesheet" href="slick/css/slick-theme.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
-  <!--　コピー用　-->
-  <header>
-    <!-- ヘッダーを作る　-->
-    <div class="header">
-      <div class="title">
-        <div class="header-bg">
-          <div class="nav">
-            <nav>　　
-              <!--　最初のボタン　-->
-              <ul>
-                <li><a href="#Introduction">Introduction</a></li>
-                <li><a href="#Courses">Courses</a></li>
-                <li><a href="#Images">Images</a></li>
-                <li><a href="#Access">Access</a></li>
-              </ul>
-            </nav>
-          </div>
 
-          <div class="main-copy">　
-            <!--　main イメージの配置　-->
-            <h1>
-              <img src="logo.png" alt="" width="900">
-            </h1>
-          </div>
+
+  <!--　コピー用　-->
+
+
+  <header>
+    <div class="header">
+
+      <div class="nav">
+        <nav>　　
+          <!--　最初のボタン　-->
+          <ul>
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#Courses">Courses</a></li>
+            <li><a href="#Images">Images</a></li>
+            <li><a href="#Access">Access</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="bgimg-slider">
+        <div class="header-1">
+          <h1 class="slider-title">
+            <img src="img/logo.png" alt="" >
+          </h1>
           <div class="sub-copy">
             <p>We are Web Designers.</p>
           </div>
-
         </div>
       </div>
+
+
+
+
+      <!-- ヘッダーを作る　-->
+
+
+
     </div>
+
+    <script src="../js/jquery.bgswitcher.js"></script>
+    <script>
+      jQuery(function($) {
+        $('.bgimg-slider').bgSwitcher({
+          images: ['img/background1.jpg', 'img/background2.jpg', 'img/background3.jpg',
+            'img/background4.jpg',
+            'img/background5.jpg',
+          ],
+          effect: "fade",
+          easing: "linear"
+        });
+      });
+    </script>
   </header>
 
   <section class="Intoroduction" id="Introduction">
@@ -49,7 +73,7 @@
 
 
     <div class="info-box1">
-      <img src="introduction_001.jpg" alt="" width="400" heigt="333">
+      <img src="img/introduction_001.jpg" alt=""  >
 
       <div class="info-1">
         <P>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
@@ -60,19 +84,28 @@
       </div>
     </div>
 
-    <div class="info-box2">
+    <div class="info-box2" id="in2">
 
-      <div class="info-2">
+      <div class="info-2" id="ini">
         <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
           WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
           自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。</p>
         <a href="#Intoroduction" class="Intoroduction-botan" id="Introduction">会員登録</a>
       </div>
-      <img src="introduction_002.jpg" alt="" width="400" heigt="333">
+      <img src="img/introduction_002.jpg" alt=""  heigt="333" id="inbox">
     </div>
   </section>
 
+
+  <!-- コース　-->
+
+
   <section class="choice-Course" id="Courses">
+
+    <div id="hoge"></div>
+    <script src="js/particles.min.js"></script>
+    <script src="js/setting.js"></script>
+
     <div class="course">
       <h2 class="title-3">Courses</h2>
 
@@ -82,7 +115,7 @@
           <div class="course-box card-a">
             <div class="course">
               <div class="img-box">
-                <img src="html.png" alt="">
+                <img src="img/html.png" alt="">
               </div>
               <p>HTMLコース</p>
               <a href="#Courses" class="course-bo">このコースを受ける
@@ -95,7 +128,7 @@
           <div class="course-box card-a">
             <div class="course">
               <div class="img-box">
-                <img src="css.png" alt="">
+                <img src="img/css.png" alt="">
               </div>
               <p>CSSコース</p>
               <a href="#Courses" class="course-bo">このコースを受ける
@@ -108,7 +141,7 @@
           <div class="course-box card-b">
             <div class="course">
               <div class="img-box">
-                <img src="unity.png" alt="">
+                <img src="img/unity.png" alt="">
               </div>
               <p>Unityコース</p>
               <a href="#Courses" class="course-bo">このコースを受ける
@@ -121,7 +154,7 @@
           <div class="course-box card-b">
             <div class="course">
               <div class="img-box">
-                <img src="ruby.png" alt="">
+                <img src="img/ruby.png" alt="">
               </div>
               <p>Rubyコース</p>
               <a href="#Courses" class="course-bo">このコースを受ける
@@ -134,7 +167,7 @@
           <div class="course-box card-a">
             <div class="course">
               <div class="img-box">
-                <img src="js.png" alt="">
+                <img src="img/js.png" alt="">
               </div>
               <p>JavaScriptコース</p>
               <a href="#Course" class="course-bo">このコースを受ける
@@ -147,7 +180,7 @@
           <div class="course-box card-b">
             <div class="course">
               <div class="img-box">
-                <img src="swift.png" alt="">
+                <img src="img/swift.png" alt="">
               </div>
               <p>Swiftコース</p>
               <a href="#Courses" class="course-bo">このコースを受ける
@@ -160,7 +193,7 @@
           <div class="course-box card-b">
             <div class="course">
               <div class="img-box">
-                <img src="go.png" alt="">
+                <img src="img/go.png" alt="">
               </div>
               <p>Goコース</p>
               <a href="#Courses" class="course-bo">このコースを受ける
@@ -172,16 +205,18 @@
     </div>
   </section>
 
+
   <section class="section image" id="Images">
     <h2 class="title-4">Images</h2>
     <div class="slideshow">
       <ul class="slider">
-        <li><img src="background1.jpg"  width="500" alt=""></li>
-        <li><img src="background2.jpg" alt=""></li>
-        <li><img src="background3.jpg" alt=""></li>
-        <li><img src="background4.jpg" alt=""></li>
-        <li><img src="background5.jpg" alt=""></li>
+        <li><img src="img/background1.jpg" alt=""></li>
+        <li><img src="img/background2.jpg" alt=""></li>
+        <li><img src="img/background3.jpg" alt=""></li>
+        <li><img src="img/background4.jpg" alt=""></li>
+        <li><img src="img/background5.jpg" alt=""></li>
       </ul>
+     
     </div>
   </section>
 
@@ -191,7 +226,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.48848993615!2d135.4851422626434!3d34.69901900662679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1612535822791!5m2!1sja!2sjp" width="600px" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
     </div>
   </section>
-  
+
   <footer>&copy; 2021 Happy Hack Inc.</footer>
 
 
@@ -199,11 +234,9 @@
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
+  <!-- js　-->
+  <script src="js/particles.min.js"></script>
   <script src="slick/js/slick.min.js"></script>
-
   <script src="main.js"></script>
-</body>
-</html>
+</body></html>
